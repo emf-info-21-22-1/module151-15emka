@@ -1,5 +1,4 @@
 <!doctype html>
-<html>
   <header>
     <link rel="stylesheet" type="text/css" href="stylesheets/main.css" />
 </header>
@@ -13,7 +12,12 @@
       </tr>
       <?php
         require('ctrl.php');
-        // A compléter....
+        $equipes = getEquipes();
+        $i = 1;
+        foreach ($equipes as $equipes){
+          echo "<tr><td>$i</td><td>$equipes</td></tr>";
+          $i++;
+        }
       ?>
       </table>
     </div>
