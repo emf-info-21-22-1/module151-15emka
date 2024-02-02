@@ -1,4 +1,6 @@
 <?php
+header("Access-Control-Allow-Origin: http://localhost");
+
 if($_GET['action'] == "equipe")
 {
 	echo '<equipes>';
