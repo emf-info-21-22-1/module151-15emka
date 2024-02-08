@@ -6,6 +6,8 @@
  * @version 1.0 / 13-SEP-2013
  */
 
+
+
 var Joueur = function() {
 };
 
