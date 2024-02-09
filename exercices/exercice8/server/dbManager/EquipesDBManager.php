@@ -1,11 +1,10 @@
 <?php
 
-    include_once('connexion.php');
+    include_once('Connexion.php');
 
-    class Equipes {
+    class EquipesDBManager {
 
         public function selectEquipe(){
-            $count = 0;
             $liste = array();
 
             $query = connexion::getInstance()->SelectQuery("SELECT PK_equipe, Nom FROM t_equipe", null);

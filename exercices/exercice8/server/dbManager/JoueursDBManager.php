@@ -1,8 +1,8 @@
 <?php
 
-    include_once('connexion.php');
+    include_once('Connexion.php');
 
-    class Joueurs {
+    class JoueursDBManager {
 
         public function selectJoueur($fk) {
             $liste = array();
